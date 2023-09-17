@@ -4,6 +4,6 @@
         public $nom;
         public $age;
     }
-//ajout de l'instance a la classe personne
+//creation de l'instance donnees de la class personne
     $donnees = new personne();
 ?>
