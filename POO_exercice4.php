@@ -4,12 +4,12 @@
         private $nom;
         private $age;
 
-       //definir la proprieté
+       //definir les proprieté
         public function setProprietees($nom, $age) {
             $this->nom = $nom;
             $this->age = $age;
         }
-
+// ajout des methodes d'accession
         public function getnom() {
             return $this->nom;
         }
@@ -19,3 +19,8 @@
         }
 
     }
+//ajout de l'instance
+    $donnes = new personne();
+// recuperation des données   
+    $donnes -> getnom();
+    $donnes -> getage();
