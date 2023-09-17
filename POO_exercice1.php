@@ -6,7 +6,7 @@
     }
 
     $donnees = new personne();
-
+    // affichage des proprietées
     echo $nom;
     echo $age;
 ?>
