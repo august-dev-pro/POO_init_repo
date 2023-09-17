@@ -22,5 +22,5 @@
 //ajout de l'instance
     $donnes = new personne();
 // recuperation des données   
-    $donnes -> getnom();
-    $donnes -> getage();
+   $nom = $donnes -> getnom();
+   $age = $donnes -> getage();
