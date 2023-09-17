@@ -1,5 +1,5 @@
 <?php
-    class personne{
+    class Personne{
 
         private $nom;
         private $age;
@@ -18,11 +18,17 @@
         }
 
     }
-    $donnes = new personne();
+    $donnes = new Personne();
 
     $donnes -> getnom();
     $donnes -> getage();
 
-    class Personne extends Employé {
+    class Employé extends Personne {
         public $salaire;
+
+        public function afficherDetailsEmp(){
+            echo "je suis $nom, j'ai $age ans et j'ai un salaire de $salaire par MOIs";
+        }
     }
+    $donneesEmp = new Employé();
+    $donneesEmp -> afficherDetailsEmp();
